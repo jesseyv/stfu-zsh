@@ -1,5 +1,6 @@
 # -*- mode: sh; -*-
 autoload -Uz vcs_info
+autoload -Uz set_terminal_title
 
 setopt prompt_subst
 
@@ -39,6 +40,9 @@ function set_prompt() {
 
     local return_code='%(?..${cl[RD]}%? ↵${cl[R]})'
     RPROMPT="${return_code} %B${vcs_info_msg_0_}%b"
+
+    local term_title="%n@%m: %~"
+    set_terminal_title "${(%)term_title}"
 }
 
 function precmd() {

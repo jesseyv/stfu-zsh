@@ -9,7 +9,7 @@ fi
 
 if [ -d $HOME/.zsh ]; then
     echo ".zsh dir already exists. Saving to .zsh.oldconf"
-    mv $HOME/.zsh $HOME/.zsh.oldconf
+    mv $HOME/.zsh/ $HOME/.zsh.oldconf/
 fi
 
 echo "Copying new configs"
