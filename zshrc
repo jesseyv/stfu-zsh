@@ -22,7 +22,7 @@ source $ZPLUGINDIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ####################
 
 # set up virtualenvwrapper
-if ! type "lsvirtualenv" > /dev/null; then
+if [ ! -f /usr/local/bin/virtualenvwrapper.sh ]; then
 
     echo "virtualenvwrapper is not installed"
 
