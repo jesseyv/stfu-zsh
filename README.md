@@ -1,4 +1,5 @@
-my-zsh
+stfu-zsh
 ======
 
-My Zsh configs
+Shut the fuck up and use Zsh
+
