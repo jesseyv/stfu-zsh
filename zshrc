@@ -6,6 +6,9 @@ local ZPLUGINDIR=$ZDIR/plugins
 
 fpath=($ZDIR/functions $fpath)
 
+autoload -U compinit
+[ ! -f ~/.zcompdump ] && compinit
+
 source $ZDIR/aliases.zsh
 
 # set up basic tools
